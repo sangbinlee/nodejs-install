@@ -152,7 +152,12 @@ nodejs-install
 
 
 
-# 
+#  sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
+    sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
+
+
+
+
 # 
 # 
 # 

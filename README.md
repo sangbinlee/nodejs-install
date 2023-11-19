@@ -179,7 +179,21 @@ nodejs-install
 
 
 
-# 
+#  sudo nginx -t
+    
+    
+    sangbinlee9@master:~$  sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
+    sangbinlee9@master:~$ sudo vi /etc/nginx/nginx.conf
+    sangbinlee9@master:~$ sudo vi /etc/nginx/nginx.conf
+    sangbinlee9@master:~$ sudo nginx -t
+    [sudo] password for sangbinlee9:
+    nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+    nginx: configuration file /etc/nginx/nginx.conf test is successful
+    sangbinlee9@master:~$
+
+
+
+
 # 
 # 
 # 

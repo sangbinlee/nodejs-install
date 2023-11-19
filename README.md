@@ -13,3 +13,8 @@ nodejs-install
 # node --version
 sangbinlee9@master:~$ node --version
 v12.22.9
+
+
+# install nginx
+sudo apt update
+sudo apt install nginx

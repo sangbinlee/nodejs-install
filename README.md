@@ -131,7 +131,28 @@ nodejs-install
 
 
 
-# 
+#  sudo vi /etc/nginx/sites-available/sodi9.store
+
+    sangbinlee9@master:~$ sudo vi /etc/nginx/sites-available/sodi9.store
+    
+    
+    server {
+    
+            listen 80;
+            listen [::]:80;
+    
+            server_name sodi9.store www.sodi9.store;
+    
+            location / {
+                    proxy_pass http://127.0.0.1:3000;
+            }
+
+}
+
+
+
+
+
 # 
 # 
 # 

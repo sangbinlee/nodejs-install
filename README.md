@@ -158,8 +158,27 @@ nodejs-install
 
 
 
-# 
-# 
+# sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
+    
+    sangbinlee9@master:~$  sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
+
+
+# sudo vi /etc/nginx/nginx.conf
+    
+    sangbinlee9@master:~$ sudo vi /etc/nginx/nginx.conf
+
+
+        server_names_hash_bucket_size 64;
+
+
+
+
+
+![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/02e42558-dc34-42b9-bc86-15e545b92900)
+
+
+
+
 # 
 # 
 # 

@@ -163,6 +163,21 @@ nodejs-install
     sangbinlee9@master:~$  sudo ln -s /etc/nginx/sites-available/sodi9.store /etc/nginx/sites-enabled/
 
 
+    
+    sangbinlee9@master:/etc/nginx/sites-available$ cd /etc/nginx/sites-enabled/
+    sangbinlee9@master:/etc/nginx/sites-enabled$ ll
+    total 8
+    drwxr-xr-x 2 root root 4096 Nov 20 02:10 ./
+    drwxr-xr-x 8 root root 4096 Nov 20 02:40 ../
+    lrwxrwxrwx 1 root root   34 Nov 20 01:51 default -> /etc/nginx/sites-available/default
+    lrwxrwxrwx 1 root root   38 Nov 20 02:10 sodi9.store -> /etc/nginx/sites-available/sodi9.store
+    sangbinlee9@master:/etc/nginx/sites-enabled$
+    
+
+
+
+
+
 # sudo vi /etc/nginx/nginx.conf
     
     sangbinlee9@master:~$ sudo vi /etc/nginx/nginx.conf

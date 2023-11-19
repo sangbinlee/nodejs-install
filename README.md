@@ -236,9 +236,172 @@ sangbinlee9@master:/etc/nginx/sites-available$
 
 
 
+# Setting Up Server Blocks (Recommended)
+    sudo mkdir -p /var/www/your_domain/html
+    sudo chown -R $USER:$USER /var/www/your_domain/html
+    sudo chmod -R 755 /var/www/your_domain
 
-# 
-# 
+    
+    nano /var/www/your_domain/html/index.html
+
+    
+        <html>
+            <head>
+                <title>Welcome to your_domain!</title>
+            </head>
+            <body>
+                <h1>Success!  The your_domain server block is working!</h1>
+            </body>
+        </html>
+
+    sudo nano /etc/nginx/sites-available/your_domain
+    
+        server {
+                listen 80;
+                listen [::]:80;
+        
+                root /var/www/your_domain/html;
+                index index.html index.htm index.nginx-debian.html;
+        
+                server_name your_domain www.your_domain;
+        
+                location / {
+                        try_files $uri $uri/ =404;
+                }
+        }
+
+    sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+
+#    sudo systemctl restart nginx
+
+ 
+      
+# How To Secure Nginx with Let's Encrypt on Ubuntu 22.04
+
+    
+    sudo snap install core; sudo snap refresh core
+    sudo apt remove certbot
+    sudo snap install --classic certbot
+    sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+    sudo nano /etc/nginx/sites-available/example.com
+    
+    ...
+    server_name example.com www.example.com;
+    ...
+    
+    sudo nginx -t
+
+    sudo systemctl reload nginx
+
+    sudo ufw status
+
+    sudo ufw allow 'Nginx Full'
+    sudo ufw delete allow 'Nginx HTTP'
+
+
+    sudo ufw status
+
+    sudo certbot --nginx -d sodi9.store -d www.sodi9.store
+
+    
+        
+        
+        sangbinlee9@master:/etc/nginx/sites-available$  sudo certbot --nginx -d sodi9.store -d www.sodi9.store
+        Saving debug log to /var/log/letsencrypt/letsencrypt.log
+        Enter email address (used for urgent renewal and security notices)
+         (Enter 'c' to cancel): sangbinlee9@gmail.com
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Please read the Terms of Service at
+        https://letsencrypt.org/documents/LE-SA-v1.3-September-21-2022.pdf. You must
+        agree in order to register with the ACME server. Do you agree?
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        (Y)es/(N)o: Y
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        Would you be willing, once your first certificate is successfully issued, to
+        share your email address with the Electronic Frontier Foundation, a founding
+        partner of the Let's Encrypt project and the non-profit organization that
+        develops Certbot? We'd like to send you email about our work encrypting the web,
+        EFF news, campaigns, and ways to support digital freedom.
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        (Y)es/(N)o: Y
+        Account registered.
+        Requesting a certificate for sodi9.store and www.sodi9.store
+        
+        Successfully received certificate.
+        Certificate is saved at: /etc/letsencrypt/live/sodi9.store/fullchain.pem
+        Key is saved at:         /etc/letsencrypt/live/sodi9.store/privkey.pem
+        This certificate expires on 2024-02-17.
+        These files will be updated when the certificate renews.
+        Certbot has set up a scheduled task to automatically renew this certificate in the background.
+        
+        Deploying certificate
+        Successfully deployed certificate for sodi9.store to /etc/nginx/sites-enabled/sodi9.store
+        Successfully deployed certificate for www.sodi9.store to /etc/nginx/sites-enabled/sodi9.store
+        Congratulations! You have successfully enabled HTTPS on https://sodi9.store and https://www.sodi9.store
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        If you like Certbot, please consider supporting our work by:
+         * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+         * Donating to EFF:                    https://eff.org/donate-le
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+    
+    
+
+
+# sudo systemctl status snap.certbot.renew.service
+      
+      
+      sangbinlee9@master:/etc/nginx/sites-available$ sudo systemctl status snap.certbot.renew.service
+      ○ snap.certbot.renew.service - Service for snap application certbot.renew
+           Loaded: loaded (/etc/systemd/system/snap.certbot.renew.service; static)
+           Active: inactive (dead)
+      TriggeredBy: ● snap.certbot.renew.timer
+      sangbinlee9@master:/etc/nginx/sites-available$
+      
+      
+
+      
+    
+# sudo certbot renew --dry-run
+          
+      
+      sangbinlee9@master:/etc/nginx/sites-available$ sudo certbot renew --dry-run
+      Saving debug log to /var/log/letsencrypt/letsencrypt.log
+      
+      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      Processing /etc/letsencrypt/renewal/sodi9.store.conf
+      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      Account registered.
+      Simulating renewal of an existing certificate for sodi9.store and www.sodi9.store
+      
+      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      Congratulations, all simulated renewals succeeded:
+        /etc/letsencrypt/live/sodi9.store/fullchain.pem (success)
+      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      sangbinlee9@master:/etc/nginx/sites-available$
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 
 # 
 # 

@@ -216,7 +216,12 @@ sangbinlee9@master:/etc/nginx/sites-available$
 
 
 
-# 
+# http://sodi9.store/
+![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/317395df-3d8f-49f9-a790-1fab174071e3)
+
+
+
+
 # 
 # 
 # 

@@ -194,7 +194,21 @@ nodejs-install
 
 
 
-# 
+# cd /etc/nginx/sites-available/
+
+
+    
+    sangbinlee9@master:~$ cd /etc/nginx/sites-available/
+    sangbinlee9@master:/etc/nginx/sites-available$ ll
+    total 16
+    drwxr-xr-x 2 root root 4096 Nov 20 02:07 ./
+    drwxr-xr-x 8 root root 4096 Nov 20 02:40 ../
+    -rw-r--r-- 1 root root 2412 May 31 02:31 default
+    -rw-r--r-- 1 root root  140 Nov 20 02:07 sodi9.store
+    sangbinlee9@master:/etc/nginx/sites-available$
+
+
+
 # 
 # 
 # 

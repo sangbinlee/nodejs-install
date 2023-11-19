@@ -209,7 +209,13 @@ nodejs-install
 
 
 
-# 
+#  sudo systemctl restart nginx
+sangbinlee9@master:/etc/nginx/sites-available$ sudo systemctl restart nginx
+sangbinlee9@master:/etc/nginx/sites-available$
+
+
+
+
 # 
 # 
 # 

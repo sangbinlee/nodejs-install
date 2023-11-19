@@ -110,7 +110,27 @@ nodejs-install
 
 
 
-# 
+# nginx
+
+    sudo systemctl stop nginx
+    sudo systemctl start nginx
+    sudo systemctl restart nginx
+    
+    //만약 설정 변경을  리로드 할 수 있다. 
+    sudo systemctl reload nginx
+    
+    //디폴트로, Nginx는 서버가 부팅될 때 자동으로 스타트  disable 
+    sudo systemctl disable nginx
+    
+    //다시 위 설정 enable하기
+    sudo systemctl enable nginx
+
+
+
+
+
+
+
 # 
 # 
 # 

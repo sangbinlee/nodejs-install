@@ -389,11 +389,7 @@ sangbinlee9@master:/etc/nginx/sites-available$
 
 
 
-
-
-![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/486c30cf-bb08-4eb7-b13c-156a1185e151)
-
-
+![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/80c194f6-f799-4ccd-83dd-d140c6168fd9)
 
 
 

@@ -62,3 +62,13 @@ nodejs-install
     Nov 20 01:51:03 master systemd[1]: Starting A high performance web server and a reverse proxy server...
     Nov 20 01:51:03 master systemd[1]: Started A high performance web server and a reverse proxy server.
     sangbinlee9@master:~$
+
+
+
+
+
+
+# http://sodi9.store/
+
+
+![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/eb0e7eab-f552-46a9-858d-62e4746335c9)

@@ -396,7 +396,40 @@ sangbinlee9@master:/etc/nginx/sites-available$
 
 
 
-# 
+# How To Install Node.js on Ubuntu 22.04
+
+
+    
+    sudo apt update
+
+    
+    sangbinlee9@master:~/front-end$ node --version
+    v12.22.9
+    sangbinlee9@master:~/front-end$ nodejs -v
+    v12.22.9
+         
+    
+    sangbinlee9@master:~$ nvm list
+    ->     v18.18.2
+             system
+    default -> v18.18.2
+    iojs -> N/A (default)
+    unstable -> N/A (default)
+    node -> stable (-> v18.18.2) (default)
+    stable -> 18.18 (-> v18.18.2) (default)
+    lts/* -> lts/iron (-> N/A)
+    lts/argon -> v4.9.1 (-> N/A)
+    lts/boron -> v6.17.1 (-> N/A)
+    lts/carbon -> v8.17.0 (-> N/A)
+    lts/dubnium -> v10.24.1 (-> N/A)
+    lts/erbium -> v12.22.12 (-> N/A)
+    lts/fermium -> v14.21.3 (-> N/A)
+    lts/gallium -> v16.20.2 (-> N/A)
+    lts/hydrogen -> v18.18.2
+    lts/iron -> v20.9.0 (-> N/A)
+    sangbinlee9@master:~$
+
+
 # 
 # 
 # 

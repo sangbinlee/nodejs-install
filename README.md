@@ -407,7 +407,38 @@ sangbinlee9@master:/etc/nginx/sites-available$
     v12.22.9
     sangbinlee9@master:~/front-end$ nodejs -v
     v12.22.9
-         
+
+
+
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+    source ~/.bashrc
+
+    nvm list-remote
+
+
+       v18.17.0   (LTS: Hydrogen)
+       v18.17.1   (LTS: Hydrogen)
+       v18.18.0   (LTS: Hydrogen)
+       v18.18.1   (LTS: Hydrogen)
+       v18.18.2   (Latest LTS: Hydrogen)
+        v19.0.0
+        v19.0.1
+        v19.1.0
+        v19.2.0
+        v19.3.0
+        v19.4.0
+        v19.5.0
+
+ 
+
+    nvm install v18.18.2
+ 
+
     
     sangbinlee9@master:~$ nvm list
     ->     v18.18.2
@@ -430,8 +461,132 @@ sangbinlee9@master:/etc/nginx/sites-available$
     sangbinlee9@master:~$
 
 
-# 
-# 
+# npx create-react-app react-1
+    
+    
+    sangbinlee9@master:~/front-end$ npx create-react-app react-1
+    
+    Creating a new React app in /home/sangbinlee9/front-end/react-1.
+    
+    Installing packages. This might take a couple of minutes.
+    Installing react, react-dom, and react-scripts with cra-template...
+    
+    
+    added 1463 packages in 52s
+    
+    242 packages are looking for funding
+      run `npm fund` for details
+    
+    Initialized a git repository.
+    
+    Installing template dependencies using npm...
+    
+    added 69 packages, and changed 1 package in 5s
+    
+    246 packages are looking for funding
+      run `npm fund` for details
+    Removing template package using npm...
+    
+    
+    removed 1 package, and audited 1532 packages in 3s
+    
+    246 packages are looking for funding
+      run `npm fund` for details
+    
+    8 vulnerabilities (2 moderate, 6 high)
+    
+    To address all issues (including breaking changes), run:
+      npm audit fix --force
+    
+    Run `npm audit` for details.
+    Git commit not created Error: Command failed: git commit -m "Initialize project using Create React App"
+        at checkExecSyncError (node:child_process:890:11)
+        at execSync (node:child_process:962:15)
+        at tryGitCommit (/home/sangbinlee9/front-end/react-1/node_modules/react-scripts/scripts/init.js:62:5)
+        at module.exports (/home/sangbinlee9/front-end/react-1/node_modules/react-scripts/scripts/init.js:350:25)
+        at [eval]:3:14
+        at Script.runInThisContext (node:vm:123:12)
+        at Object.runInThisContext (node:vm:299:38)
+        at node:internal/process/execution:82:21
+        at [eval]-wrapper:6:24 {
+      status: 128,
+      signal: null,
+      output: [ null, null, null ],
+      pid: 13705,
+      stdout: null,
+      stderr: null
+    }
+    Removing .git directory...
+    
+    Success! Created react-1 at /home/sangbinlee9/front-end/react-1
+    Inside that directory, you can run several commands:
+    
+      npm start
+        Starts the development server.
+    
+      npm run build
+        Bundles the app into static files for production.
+    
+      npm test
+        Starts the test runner.
+    
+      npm run eject
+        Removes this tool and copies build dependencies, configuration files
+        and scripts into the app directory. If you do this, you can’t go back!
+    
+    We suggest that you begin by typing:
+    
+      cd react-1
+      npm start
+    
+    Happy hacking!
+    sangbinlee9@master:~/front-end$
+
+
+
+
+
+#  cd react-1
+#  npm start
+    
+    Compiled successfully!
+    
+    You can now view react-1 in the browser.
+    
+      Local:            http://localhost:3000
+      On Your Network:  http://192.168.0.65:3000
+    
+    Note that the development build is not optimized.
+    To create a production build, use npm run build.
+    
+    webpack compiled successfully
+    
+    
+
+
+
+![image](https://github.com/sangbinlee/nodejs-install/assets/4024414/8bdde3f6-d1b0-4c43-a6ac-4d641351644d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 
 # 
 # 
